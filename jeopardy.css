@@ -1,0 +1,121 @@
+.center {
+    text-align: center;
+}
+
+html, body {
+    height: 100%;
+    margin:0;
+    overscroll-behavior: none;
+}
+h1 {
+    padding: 20px;
+    font-size: 200%;
+    background-color: black;
+    color: white;
+    margin-bottom: 0;
+}
+
+#h1{
+	position: relative;
+	  font-family: sans-serif;
+	  text-transform: uppercase;
+	  font-size: 2em;
+	  letter-spacing: 4px;
+	  background-color: black;
+	  overflow: hidden;
+	  background: linear-gradient(90deg, #000, #fff, #000);
+	  background-repeat: no-repeat;
+	  background-size: 80%;
+	  animation: animate 4s linear infinite;
+	  -webkit-background-clip: text;
+	  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+
+/* Top navigation */
+.topnav {
+  overflow: hidden;
+  background-color: black;
+  padding-bottom: 10 auto;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: lightblue;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: lightblue;
+  color: white;
+}
+
+.hero-bkg-animated {
+  background: gray url(background.png) repeat 0 0;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  height: 100%;
+  box-sizing: border-box;
+  -webkit-animation: slide 20s linear infinite;
+}
+
+.hero-bkg-animated h1 {
+  font-family: sans-serif;
+}
+
+@-webkit-keyframes slide {
+    from { background-position: 0 0; }
+    to { background-position: -400px 0; }
+}
+#score_container_main{
+  padding: 3%;
+}
+
+#game_cards_container{
+  padding: 3%;
+  text-align: center;
+}
+.questionbutton{
+  border: 1px solid #c3c3c3;
+  padding: 5px;
+  height: 100%;
+}
+#game_cards_container div div{
+  text-align: center;
+}
+
+.categoryHeader{
+  border: 1px solid #c3c3c3;
+  padding: 5px;
+}
+
+.questionRow{
+  height: 130px;
+}
+
+/*for Login Page*/
+#login_main_container {
+  width: 90%;
+  margin: auto;
+  height: 80%;
+  padding: 5%;
+  /*border: 1px solid #c3c3c3;*/
+}
+
+#submitbutton {
+  border: 1px solid #c3c3c3;
+}
+
+
+body div div button{
+  background-image: url("./buttonbackground.jpg");
+}

@@ -1,0 +1,54 @@
+<html>
+	<head>
+		<title> About this Game </title>
+		<!-- CSS linking -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<link href="./jeopardy.css" rel="stylesheet" type="text/css">
+	</head>
+	
+	<body>
+		<div id = "body_header_main">
+			<div style="background-color: black">
+                <h1 class="center" id="h1">
+                    Jeopardy
+                </h1>
+            </div>
+            <div>
+                <div class="topnav">
+					<a href="./index.php">Home</a>
+                    <a href="./restartGame.php">Restart Game</a>
+                    <a href="#leaderboard">Leaderboard </a>
+                    <a class="active" href="./about.html">About</a>
+                    <?php if(!isset($_COOKIE["user_name"])) { ?>
+                        <a href="./login.html" style="float:right"> Login </a>
+                    <?php }else { ?>
+                        <p style="float:right"> <?php echo $_COOKIE["user_name"]; ?></p>
+                        <?php } ?>
+                </div>
+
+			</div>
+        </div>
+        
+        <div style="padding:auto;margin:auto;align-content: center; width: 70%;">
+            <div style= "border: 1px solid black;margin:5%;text-align: center; ">
+                <h2>Info for Game Play</h2><br/>
+                <ul style="list-style-type:none;">
+                <li>Jeopardy is a two player game. Player1 gets the opening chance.</li><br/>
+                <li>Player can choose any question from one of the five categories. Each category has questions ranging from $10 to $50.</li><br/>
+                <li>If a player gets the question right, he/she will be awarded the score associated with that particular question.</li><br/>
+                <li>If selected answer is wrong, then the control goes to other player.</li><br/>
+                <li>Player with most number of points at the end of the game wins.</li><br/>
+                </ul>
+                <!-- <img src="aboutimage.jpeg" width="650px" height="400px"/> -->
+            </div>
+        
+            
+        </div>
+
+        <marquee scrollamount="30">
+            <img src="loginimage.jpeg" width="650px" height="400px"/>
+            <img src="aboutimage1.jpeg" width="650px" height="400px"/>
+            <img src="aboutimage2.jpeg" width="650px" height="400px"/>
+        </marquee>
+	</body>
+</html>

@@ -1,0 +1,73 @@
+<html>
+	<head>
+		<title> Jeopardy Login </title>
+		<!-- CSS linking -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<link href="./jeopardy.css" rel="stylesheet" type="text/css">
+	</head>
+	
+	<body>
+		<div id = "body_header_main">
+			<div style="background-color: black">
+                <h1 class="center" id="h1">
+                    Jeopardy
+                </h1>
+            </div>
+            <div>
+                <div class="topnav">
+					<a href="./restartGame.php">Home</a>
+                    <a href="./restartGame.php">Restart Game</a>
+                    <a href="#leaderboard">Leaderboard </a>
+                    <a href="./about.html">About</a>
+                    <a class="active" href="#" style="float:right"> Login </a>
+                </div>
+
+			</div>
+		</div>
+
+	<br/>
+	<div style="float:left; width:40%; padding: 50px;border-right: 3px solid black; height:fit-content">
+		<form action="userLogin.php" method = "post">
+			<div id="login_main_container">
+				<div>
+					<div class="container align-middle" >
+						<form>
+							<div class="form-group">
+							  <label for="exampleInputEmail1">Name</label>
+							  <input name='username' type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+							</div>
+							<div class="form-group">
+							  <label for="exampleInputPassword1">Password</label>
+							  <input name="password" type="password" class="form-control" id="exampleInputPassword1">
+							</div>
+							<!-- <div class="form-group form-check">
+							  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+							  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+							</div> -->
+							<button id ="submitbutton" name="submitbutton" method="post" type="submit">Login</button>
+						  </form>
+					  </div>
+				</div>
+			</div>	
+		</form>
+	</div>
+
+	<div style="float:left; width:60%; padding:25px;">
+	<ul>
+		<br/>
+		<li>User can login to Jeopardy game using the registered email and password. For now, we aren't restricting user from entering any characters.</li><br/>
+		<li>After Login, user can quickly logout of the game by clicking on username in navigation header.</li><br/>
+		<li>Please note that every username will be stored in the session. In order to clear session storage. Please close the browser window.</li><br/>
+		<li>Username and details will not be shared with any of our business partners.</li><br/>
+		<li>We make use of cookies to offer you a better experience.</li>
+	</ul>
+	</div>
+
+	<div>
+		<div style="align-content: center; width:70%;margin:auto">
+			<img src="./loginimage.jpeg" width="800px" height="500px">
+		</div>
+	</div>
+
+	</body>
+</html>
